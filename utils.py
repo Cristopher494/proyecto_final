@@ -1,8 +1,8 @@
 import cv2
 import numpy as np
 from PIL import Image
-from tensorflow.keras.models import load_model
-from tensorflow.keras.preprocessing.image import ImageDataGenerator, img_to_array, load_img
+from keras.models import load_model
+from keras.preprocessing.image import ImageDataGenerator, img_to_array, load_img
 
 def crop_image_from_gray(img, tol=7):
     if img.ndim == 2:
