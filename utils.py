@@ -1,8 +1,8 @@
 import cv2
 import numpy as np
 from PIL import Image
-from keras.preprocessing.image import ImageDataGenerator, img_to_array, load_img
-import tensorflow as tf
+from tensorflow.keras.models import load_model
+from tensorflow.keras.preprocessing.image import ImageDataGenerator, img_to_array, load_img
 
 def crop_image_from_gray(img, tol=7):
     if img.ndim == 2:
@@ -50,7 +50,7 @@ def load_image(image_file):
 #output= "Modelo_DesNet121"
 #gdown.download(url, output, quiet=False)
 #model = load_model(output)
-
+'''
 def load_model(model_path):
     try:
         print("Intentando cargar el modelo desde:", model_path)
@@ -59,5 +59,5 @@ def load_model(model_path):
         return model
     except Exception as e:
         print("Error al cargar el modelo:", e)
-        return None
+        return None'''
 

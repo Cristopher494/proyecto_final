@@ -2,10 +2,11 @@ import streamlit as st
 from PIL import Image
 import requests
 import numpy as np
+from tensorflow.keras.models import load_model
 from streamlit_lottie import st_lottie
 import time
 from streamlit_extras.switch_page_button import switch_page
-from utils import *
+from utils import load_image, load_ben_color
 
 # Cargar el modelo
 modelo = load_model('./project/models/densenet121_model.h5')
