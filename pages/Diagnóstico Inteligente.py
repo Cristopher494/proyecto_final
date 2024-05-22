@@ -9,7 +9,8 @@ from streamlit_extras.switch_page_button import switch_page
 from utils import load_image, load_ben_color
 
 # Cargar el modelo
-modelo = load_model('./project/models/densenet121-preprocessed-retrain-epoch803.h5')
+#modelo = load_model('./project/models/densenet121-preprocessed-retrain-epoch803.h5')
+modelo = load_model('./project/models/densenet121.h5')
 
 # Función para cargar la animación Lottie
 def load_lottie_url(url):
