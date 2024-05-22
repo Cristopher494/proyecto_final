@@ -1,0 +1,10 @@
+streamlit
+pillow
+requests
+numpy
+tensorflow
+streamlit-lottie
+streamlit-extras
+h5py
+opencv-python-headless
+utils
