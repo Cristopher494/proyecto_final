@@ -9,7 +9,7 @@ import time
 from streamlit_extras.switch_page_button import switch_page
 
 # Cargar el modelo
-modelo = load_model('./project/models/densenet121_preprocess-retin.keras')
+modelo = load_model('./project/models/densenet121_preprocessed-retrain.keras')
 
 def load_lottie_url(url):
     r = requests.get(url)

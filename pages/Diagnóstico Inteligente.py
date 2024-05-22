@@ -9,7 +9,7 @@ from streamlit_extras.switch_page_button import switch_page
 from utils import load_image, load_ben_color
 
 # Cargar el modelo
-modelo = load_model('./project/models/densenet121_preprocess-retin.keras')
+modelo = load_model('./project/models/densenet121_preprocessed-retrain.keras')
 
 # Función para cargar la animación Lottie
 def load_lottie_url(url):
